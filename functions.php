@@ -1,4 +1,8 @@
 <?php
+/*
+	Place this script in your Wordpress theme folder
+
+*/
 
 function wp_after_body() { 
   do_action('wp_after_body');
