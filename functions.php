@@ -1,7 +1,7 @@
 <?php
 /*
 	Place this script in your Wordpress theme folder
-
+	and/or adjust your current theme's functions.php file
 */
 
 function wp_after_body() { 
