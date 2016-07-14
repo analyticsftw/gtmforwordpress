@@ -2,6 +2,10 @@
 /*
 	Place this script in your Wordpress theme folder
 	and/or adjust your current theme's functions.php file
+	
+	This function outputs a Google Tag Manager dataLayer JavaScript collection within the HEAD HTML tag.
+	You can then point to the variables within the collection using Google Tag Manager to power variables (macros) and triggers (rules).
+	You can extend 
 */
 
 function wp_after_body() { 
