@@ -50,11 +50,12 @@ function dataLayer()
 	if ($posttags) {
 		foreach($posttags as $tag) {$gtm_tags.= $tag->name . ' ';}
 	}
+	if ($gtm_cats){$gtm_catconcat=join(",",$gtm_cats);}else{$gtm_catconcat="";}
 	$gtmBuffer.= "\n
     'author': '" . get_the_author() . "',
     'postType': '" . get_post_type() . "',
     'postCategory': '" . $gtm_cat[0]->cat_name . "',
-    'postCategories': '".join(",",$gtm_cats)."',
+    'postCategories': '".$gtm_catconcat."',
     'postTags': '" . addslashes(trim($gtm_tags)) . "',";
   }
   $gtmBuffer.= "\n'terminator': 'I\'ll be back' // Always terminate your arrays!
